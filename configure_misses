@@ -1,0 +1,113 @@
+Configure miss: cygwin/fs.h usability
+Configure miss: cygwin/fs.h presence
+Configure miss: cygwin/fs.h
+Configure miss: cygwin/version.h usability
+Configure miss: cygwin/version.h presence
+Configure miss: cygwin/version.h
+Configure miss: dal/file_dal.h usability
+Configure miss: dal/file_dal.h presence
+Configure miss: dal/file_dal.h
+Configure miss: dal/file.h usability
+Configure miss: dal/file.h presence
+Configure miss: dal/file.h
+Configure miss: ddk/ntddstor.h usability
+Configure miss: ddk/ntddstor.h presence
+Configure miss: ddk/ntddstor.h
+Configure miss: giconv.h usability
+Configure miss: giconv.h presence
+Configure miss: giconv.h
+Configure miss: machine/endian.h usability
+Configure miss: machine/endian.h presence
+Configure miss: machine/endian.h
+Configure miss: ncurses/curses.h usability
+Configure miss: ncurses/curses.h presence
+Configure miss: ncurses/curses.h
+Configure miss: ncurses/ncurses.h usability
+Configure miss: ncurses/ncurses.h presence
+Configure miss: ncurses/ncurses.h
+Configure miss: ncursesw/curses.h usability
+Configure miss: ncursesw/curses.h presence
+Configure miss: ncursesw/curses.h
+Configure miss: ncursesw/ncurses.h usability
+Configure miss: ncursesw/ncurses.h presence
+Configure miss: ncursesw/ncurses.h
+Configure miss: ntfs/version.h usability
+Configure miss: ntfs/version.h presence
+Configure miss: ntfs/version.h
+Configure miss: sys/cygwin.h usability
+Configure miss: sys/cygwin.h presence
+Configure miss: sys/cygwin.h
+Configure miss: sys/dkio.h usability
+Configure miss: sys/dkio.h presence
+Configure miss: sys/dkio.h
+Configure miss: sys/vtoc.h usability
+Configure miss: sys/vtoc.h presence
+Configure miss: sys/vtoc.h
+Configure miss: w32api/ddk/ntdddisk.h usability
+Configure miss: w32api/ddk/ntdddisk.h presence
+Configure miss: w32api/ddk/ntdddisk.h
+Configure miss: windef.h usability
+Configure miss: windef.h presence
+Configure miss: windef.h
+Configure miss: winbase.h
+Configure miss: winioctl.h
+Configure miss: w32api/winioctl.h
+Configure miss: ext2fs/ext2_fs.h
+Configure miss: ext2fs/ext2fs.h
+Configure miss: libewf.h usability
+Configure miss: libewf.h presence
+Configure miss: libewf.h
+Configure miss: ntfs/attrib.h usability
+Configure miss: ntfs/attrib.h presence
+Configure miss: ntfs/attrib.h
+Configure miss: ntfs/volume.h usability
+Configure miss: ntfs/volume.h presence
+Configure miss: ntfs/volume.h
+Configure miss: ntfs-3g/attrib.h usability
+Configure miss: ntfs-3g/attrib.h presence
+Configure miss: ntfs-3g/attrib.h
+Configure miss: ntfs-3g/volume.h usability
+Configure miss: ntfs-3g/volume.h presence
+Configure miss: ntfs-3g/volume.h
+Configure miss: dal_t.block_size
+Configure miss: dal_t.error
+Configure miss: dal_t.entity
+Configure miss: dal_t.name
+Configure miss: struct dal_ops.dev
+Configure miss: struct struct_io_manager.set_option
+Configure miss: struct struct_io_manager.read_blk64
+Configure miss: struct struct_io_manager.write_blk64
+Configure miss: struct tm.tm_gmtoff
+Configure miss: libreiserfs_get_version in -lreiserfs
+Configure miss: sys/uuid.h usability
+Configure miss: sys/uuid.h presence
+Configure miss: sys/uuid.h
+Configure miss: uuid.h usability
+Configure miss: uuid.h presence
+Configure miss: uuid.h
+Configure miss: uuidgen
+Configure miss: uuid_create
+Configure miss: delscreen
+Configure miss: libewf_handle_read_buffer_at_offset
+Configure miss: libewf_handle_write_buffer_at_offset
+Configure miss: touchwin
+Configure miss: reiserfs_fs_open_fast
+Configure miss: ntfs_libntfs_version
+Configure miss: ntfs_volume_startup
+Configure miss: x86_64-generic-linux-gnu-moc-qt5
+Configure miss: x86_64-generic-linux-gnu-moc
+Configure miss: moc-qt5
+Configure miss: x86_64-generic-linux-gnu-rcc-qt5
+Configure miss: x86_64-generic-linux-gnu-rcc
+Configure miss: rcc-qt5
+Configure miss: x86_64-generic-linux-gnu-lrelease-qt5
+Configure miss: x86_64-generic-linux-gnu-lrelease
+Configure miss: lrelease-qt5
+Configure miss: whether pthreads work with -pthread
+Configure miss: whether pthreads work with -pthreads
+Configure miss: whether pthreads work with -mthreads
+Configure miss: the pthreads library -lpthread
+Configure miss: whether pthreads work with --thread-safe
+Configure miss: whether pthreads work with -mt
+Configure miss: pthread-config
+Configure miss: askloc.c:314:2: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]

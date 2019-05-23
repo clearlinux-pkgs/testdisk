@@ -1,0 +1,9 @@
+7.1.wip
+libjpeg-turbo-dev
+ncurses-dev
+pkgconfig(ncurses)
+pkgconfig(ncursesw)
+pkgconfig(zlib)
+qtbase-dev
+qttools-dev
+util-linux-dev
