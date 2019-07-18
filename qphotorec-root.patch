@@ -1,0 +1,68 @@
+diff --git a/org.cgsecurity.qphotorec.policy b/org.cgsecurity.qphotorec.policy
+new file mode 100644
+index 0000000..c3d7c99
+--- /dev/null
++++ b/org.cgsecurity.qphotorec.policy
+@@ -0,0 +1,46 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
++<policyconfig>
++  <vendor>CGSecurity</vendor>
++  <vendor_url>https://github.com/cgsecurity/testdisk</vendor_url>
++  <icon_name>qphotorec</icon_name>
++  <action id="org.cgsecurity.qphotorec">
++    <description>Photo recovery software</description>
++    <message>Authentication is required to run the QPhotoRec as root</message>
++        <message xml:lang="be">Для запуску QPhotoRec ад імя суперкарыстальніка патрабуецца аўтэнтыфікацыя</message>
++        <message xml:lang="cs">Ke spuštění editoru oddílů QPhotoRec pod uživatelem root je vyžadováno ověření</message>
++        <message xml:lang="da">Godkendelse er krævet for at køre partitioneringsprogrammet QPhotoRec som root</message>
++        <message xml:lang="de">Legitimierung ist erforderlich, um QPhotoRec als Root-Benutzer auszuführen</message>
++        <message xml:lang="eo">Necesas aŭtentigo por ruli QPhotoRec Subdiskoredaktilo kiel root</message>
++        <message xml:lang="es">Se necesita autenticación para ejecutar el editor de particiones QPhotoRec como root</message>
++        <message xml:lang="fi">Tunnistautuminen vaaditaa QPhotoRec-osiomuokkaimen suorittamiseksi root-käyttäjänä</message>
++        <message xml:lang="fr">Il est nécessaire de s’authentifier pour lancer l’éditeur de partitions QPhotoRec en tant qu’utilisateur root</message>
++        <message xml:lang="fur">La autenticazion e je necessarie par eseguî come root l'editôr di partizions QPhotoRec</message>
++        <message xml:lang="hr">Potrebna je ovjera za pokretanje QPhotoRec uređivača particija kao korijenskog korisnika</message>
++        <message xml:lang="hu">Hitelesítés szükséges a QPhotoRec partíciószerkesztő rendszergazdaként való futtatásához</message>
++        <message xml:lang="id">Otentikasi diperlukan untuk menjalankan Penyunting Partisi QPhotoRec sebagai root</message>
++        <message xml:lang="is">Auðkenningar er krafist til að keyra QPhotoRec disksneiðingarstjórann sem kerfisstjóri (root)</message>
++        <message xml:lang="it">È richiesto autenticarsi per eseguire «QPhotoRec» come root</message>
++        <message xml:lang="kk">QPhotoRec бөлімдер түзеткішін әкімші ретінде жөнелту үшін аутентификация керек</message>
++        <message xml:lang="ko">QPhotoRec 분할 영역 편집기를 루트 권한으로 실행하려면 인증이 필요합니다</message>
++        <message xml:lang="lt">Reikia patvirtinti tapatybę norint vykdyti QPhotoRec skirsnių redaktorių root teisėmis</message>
++        <message xml:lang="lv">Nepieciešama autentificēšana, lai palaistu QPhotoRec nodalījumu redaktoru ar root tiesībām</message>
++        <message xml:lang="nl">Authenticatie is vereist om QPhotoRec partitiebewerker uit te voeren als systeembeheerder (root)</message>
++        <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby uruchomić edytora partycji QPhotoRec jako administrator</message>
++        <message xml:lang="pt_BR">Autenticação é necessária para executar o Editor de Partições QPhotoRec como root</message>
++        <message xml:lang="ro">Autentificarea este necesară pentru a rula Editorul de partiții QPhotoRec ca root</message>
++        <message xml:lang="ru">Требуется авторизация для запуска редактора разделов QPhotoRec с правами root</message>
++        <message xml:lang="sk">Na spustenie editora oddielov QPhotoRec ako správca sa vyžaduje overenie totožnosti</message>
++        <message xml:lang="sv">Autentisering krävs för att köra QPhotoRec partitionsredigerare som root</message>
++        <message xml:lang="tr">QPhotoRec Disk Bölümü Düzenleyicisiʼni kök olarak çalıştırmak içinyetkilendirme gereklidir</message>
++        <message xml:lang="vi">Cần xác thực để chạy bộ Sửa phân vùng đĩa QPhotoRec dưới tư cách siêu quản trị</message>
++        <message xml:lang="zh_TW">需要驗證才能以 root 執行 QPhotoRec 分割區編輯器</message>
++    <defaults>
++      <allow_any>auth_admin</allow_any>
++      <allow_inactive>auth_admin</allow_inactive>
++      <allow_active>auth_admin</allow_active>
++    </defaults>
++    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/qphotorec</annotate>
++    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
++   </action>
++</policyconfig>
+diff --git a/qphotorec-root.desktop b/qphotorec-root.desktop
+new file mode 100644
+index 0000000..d68a8ff
+--- /dev/null
++++ b/qphotorec-root.desktop
+@@ -0,0 +1,10 @@
++[Desktop Entry]
++Type=Application
++Version=1.0
++Name=QPhotoRec(root)
++GenericName=Data Recovery Utility
++Icon=qphotorec
++TryExec=/usr/bin/qphotorec
++Exec=/usr/bin/pkexec /usr/bin/qphotorec %F
++Terminal=false
++Categories=System;Filesystem;Qt;

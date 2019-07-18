@@ -1,0 +1,4 @@
+mkdir -p %{buildroot}/usr/share/applications
+cp qphotorec-root.desktop %{buildroot}/usr/share/applications
+mkdir -p %{buildroot}/usr/share/polkit-1/actions
+cp org.cgsecurity.qphotorec.policy %{buildroot}/usr/share/polkit-1/actions
