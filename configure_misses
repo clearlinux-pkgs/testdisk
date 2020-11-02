@@ -1,3 +1,4 @@
+Configure miss: windres
 Configure miss: cygwin/fs.h usability
 Configure miss: cygwin/fs.h presence
 Configure miss: cygwin/fs.h

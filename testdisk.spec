@@ -4,7 +4,7 @@
 #
 Name     : testdisk
 Version  : 7.1
-Release  : 2
+Release  : 3
 URL      : https://www.cgsecurity.org/testdisk-7.1.tar.bz2
 Source0  : https://www.cgsecurity.org/testdisk-7.1.tar.bz2
 Summary  : No detailed summary available
@@ -75,6 +75,7 @@ man components for the testdisk package.
 
 %prep
 %setup -q -n testdisk-7.1
+cd %{_builddir}/testdisk-7.1
 %patch1 -p1
 
 %build
@@ -82,14 +83,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563480920
+export SOURCE_DATE_EPOCH=1604360947
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -99,13 +100,13 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1563480920
+export SOURCE_DATE_EPOCH=1604360947
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/testdisk
-cp COPYING %{buildroot}/usr/share/package-licenses/testdisk/COPYING
+cp %{_builddir}/testdisk-7.1/COPYING %{buildroot}/usr/share/package-licenses/testdisk/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
 %make_install
 ## install_append content
 mkdir -p %{buildroot}/usr/share/applications
@@ -138,7 +139,7 @@ cp org.cgsecurity.qphotorec.policy %{buildroot}/usr/share/polkit-1/actions
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/testdisk/COPYING
+/usr/share/package-licenses/testdisk/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
 
 %files man
 %defattr(0644,root,root,0755)
